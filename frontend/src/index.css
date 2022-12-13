@@ -1,0 +1,17 @@
+:root {
+  width: 80%;
+  margin: 0 auto;
+
+  color: #333333;
+  font-family: 'Railway', sans-serif;
+}
+
+@media (min-width: 768px) {
+  :root {
+      width: 66%;
+  }
+}
+
+button {
+  cursor: pointer;
+}

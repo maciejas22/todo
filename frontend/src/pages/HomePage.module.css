@@ -1,0 +1,82 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    margin: 12px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav li {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+
+    background: white;
+    border: 0;
+
+    position: relative;
+    text-align: center;
+    flex: 1 1 0px;
+}
+
+.nav .active:after {
+    position: absolute;
+    background: #2f80ed;
+    border-radius: 4px 4px 0 0;
+    bottom: -19px;
+    content: "";
+
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 50%;
+    height: 4px;
+    z-index: 100;
+}
+
+hr {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin: 6px 12px;
+}
+
+.addBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.addBox input {
+    width: 80%;
+    padding: 20px;
+    margin: 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;
+}
+
+.addBox button {
+    width: 20%;
+    margin: 12px;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+
+    background: #2F80ED;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border-radius: 12px;
+    border: 0;
+}
