@@ -34,7 +34,6 @@ const HomePage = () => {
         <div className={ContentCSS.hero}>
             <Header />
 
-            {/* filter menu */}
             <ul className={ContentCSS.nav}>
                 <li onClick={handleTaskFilter} className={active == '1' ? ContentCSS['active'] : undefined} id='1'>All</li>
                 <li onClick={handleTaskFilter} className={active == '2' ? ContentCSS['active'] : undefined} id='2'>Active</li>
@@ -42,10 +41,9 @@ const HomePage = () => {
             </ul>
             <hr />
 
-            {/* add task menu */}
             <form className={ContentCSS.addBox} onSubmit={addTask}>
                 <input type="text" placeholder='add new task'/>
-                <button >Add</button>
+                <button type='submit'>Add</button>
             </form>
         
             <Tasks tasks={filteredTasks}/>

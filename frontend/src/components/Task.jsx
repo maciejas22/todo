@@ -17,14 +17,16 @@ const Task = ({ task }) => {
         <input
           type="checkbox"
           className={ContentCSS.checkbox}
-          id={task.relative_id}
+          id={"task_id_" + task.relative_id}
           defaultChecked={task.completed}
           onClick={() =>
             updateTask(task.relative_id, task.task, !task.completed)
           }
         />
+        <label htmlFor={"task_id_" + task.relative_id} className={ContentCSS.customCheckbox}></label>
         {isPTag ? (
           <p className={ContentCSS.taskTitle}>{task.task}</p>
+
         ) : (
           <form
             className={ContentCSS.form}
