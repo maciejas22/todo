@@ -21,3 +21,5 @@ Web based todo app that allows users manage their tasks and keep track of their 
 
 
 ## Screenshots:
+* **Home Page View:** <img src="/ScreenShots/HomePageView.jpeg" alt="Home Page View" title="Home Page View">
+* **Login Page View:** <img src="/ScreenShots/LoginView.jpeg" alt="Login Page View" title="Login Page View">
